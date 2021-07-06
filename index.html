@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>benjamin sucasaire - Freelancer</title>
+    <!-- esto permite tener una carga mas rapida para mi archivo normalize.css -->
+    <link rel="preload" href="/css/normalize.css" as="style" />
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="shortcut icon" href="./img/favicon.ico" />
+
+    <!-- para el formato de google font  -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet" /> -->
+    <!-- esto permite tener una carga mas rapida para mi archivo style.css -->
+    <link rel="preload" href="/css/style.css" as="style" />
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body>
+    <header>
+        <h1 class="titulo">Benjamin Sucasaire <span>Freelancer</span> </h1>
+    </header>
+    <div class="nav-bg">
+        <nav class="navegacion-principal contenedor">
+            <a href="#titulo-portafolio">Portafolio</a>
+            <a href="#Habilidades">Habilidades</a>
+            <a href="#">Experiencia</a>
+            <a href="#">Pasatiempos</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </div>
+
+    <section class="hero">
+        <div class="contenido-hero">
+            <h2>Benjamin Abel Sucasaire Huamani</h2>
+            <div class="ubicacion-mapa">
+                <img src="./img/svg/mapa.svg" />
+                <p>Abancay-Perú</p>
+            </div>
+
+            <a class="boton "
+                href="https://api.whatsapp.com/send?phone=51921287971&text=hola%20quisiera%20tu%20servicio%20como%20freelancer"
+                target="_blank">Contactar</a>
+        </div>
+    </section>
+
+    <!-- -------------------------------------------------------------------portafolio------------------------- -->
+    <section>
+        <h2 id="titulo-portafolio">portafolio</h2>
+        <!-- para utlizar flexbox tenemos que selecionar un contenedor -->
+
+        <section id="layout">
+            <div class="caja orange">
+                <img class="img-responsive" src="/img/sistemascloudsyh.PNG" />
+            </div>
+            <div class="caja morado">
+                <img class="img-responsive" src="/img/vinos del tori.PNG" />
+            </div>
+            <div class="caja red">
+                <img class="img-responsive" src="/img/sistemascloudsyh.PNG" />
+            </div>
+            <div class="caja green">
+                <img class="img-responsive" src="/img/vinos del tori.PNG" />
+            </div>
+            <div class="caja blue">
+                <img class="img-responsive" src="/img/sistemascloudsyh.PNG" />
+            </div>
+            <div class="caja orange">
+                <img class="img-responsive" src="/img/vinos del tori.PNG" />
+            </div>
+            <div class="caja morado">
+                <img class="img-responsive" src="/img/sistemascloudsyh.PNG" />
+            </div>
+        </section>
+    </section>
+    <!-- -------------------------------------------------------------------fin portafolio------------------------- -->
+
+    <main id="Habilidades" class="contenedor sombra">
+        <h2 class="scroll-habilidad">Mis Habilidades</h2>
+        <div class="habilidades">
+            <section class="habilidad">
+
+                <div class="iconos">
+                    <img src="./img/svg/html-5.svg" />
+                    <p class="overlay">
+                        HTML 5
+                    </p>
+                </div>
+
+
+            </section>
+            <section class="habilidad">
+
+                <div class="iconos">
+                    <img src="./img/svg/css.svg" />
+                    <p class="overlay">
+                        CSS 3
+                    </p>
+                </div>
+
+            </section>
+            <section class="habilidad">
+
+                <div class="iconos">
+                    <img src="./img/svg/sass.svg" />
+                    <p class="overlay">
+                        Sass
+                    </p>
+                </div>
+
+            </section>
+
+            <section class="habilidad">
+
+                <div class="iconos">
+                    <img src="./img/svg/java.svg" />
+                    <p class="overlay">
+                        Java
+                    </p>
+                </div>
+
+            </section>
+            <section class="habilidad">
+
+                <div class="iconos">
+
+                    <img src="./img/svg/mysql.svg" />
+                    <p class="overlay">
+                        MySql
+                    </p>
+                </div>
+
+            </section>
+            <section class="habilidad">
+
+                <div class="iconos">
+                    <img src="./img/svg/github.svg" />
+                    <p class="overlay">
+                        Git
+                    </p>
+                </div>
+
+            </section>
+            <section class="habilidad">
+
+                <div class="iconos">
+                    <img src="./img/svg/c.svg" />
+                    <p class="overlay">
+                        C++
+                    </p>
+                </div>
+
+            </section>
+            <section class="habilidad">
+
+                <div class="iconos">
+                    <img src="./img/svg/nginx.svg" />
+                    <p class="overlay">
+                        Nginx
+                    </p>
+                </div>
+
+            </section>
+        </div>
+        <!-- este es el cierre de la clase servivicos -->
+    </main>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+
+        <form class="formulario" action="">
+            <fieldset>
+                <legend>Puedes escribirme directamente!!</legend>
+                <div class="contenedor-campos">
+                    <div class="campo">
+                        <label for="">Nombre</label>
+                        <input class="input-text" type="text" placeholder=" Tu Nombre" required="true" />
+                    </div>
+                    <div class="campo">
+                        <label for="">Telefono</label>
+                        <input class="input-text" type="tel" placeholder=" Tu Numero" required="true" />
+                    </div>
+                    <div class="campo">
+                        <label for="">Correo</label>
+                        <input class="input-text" type="email" placeholder=" Tu Correo" required="true" />
+                    </div>
+                    <div class="campo">
+                        <label for="">Mensaje</label>
+                        <textarea class="input-text" required="true"></textarea>
+                    </div>
+                    <div class="campo">
+                        <img src="./img/svg/llamada-telefonica.svg" />
+                    </div>
+                </div>
+
+
+                <!--  .contenedor-campos -->
+                <div>
+                    <input class=" enviar boton" type="submit" value="Enviar" />
+                </div>
+
+            </fieldset>
+        </form>
+        <div class="wsp-contenedor"><a class="wsp"
+                href="https://api.whatsapp.com/send?phone=51921287971&fbclid=IwAR1t4fF7CCVWDe6SwLvWklohlqDqL0Qvxe458eZrcurtBhC6GkfmTrhvRVA"
+                target="_blank">
+                <ion-icon class="icono_whatsapp" name="logo-whatsapp"></ion-icon>
+            </a></div>
+
+
+    </section>
+    <!-- estoesmipelotita-->
+    <!--     <div id="caja">
+
+    </div> -->
+    <footer class="footer">
+        <p>Todos los derechos reservados - Benjamin Sucasaire Freelancer - © 2021</p>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+</body>
+
+</html>
